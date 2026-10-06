@@ -1,0 +1,15 @@
+{
+  "item.sf_deco.controller": "コントローラー",
+
+  "block.sf_deco.concrete_wall_a": "コンクリート壁 A",
+  "block.sf_deco.concrete_wall_b": "コンクリート壁 B",
+  "block.sf_deco.concrete_wall_c": "コンクリート壁 C",
+  "block.sf_deco.concrete_wall_d": "コンクリート壁 D",
+  "block.sf_deco.concrete_wall_e": "コンクリート壁 E",
+  "block.sf_deco.concrete_wall_f": "コンクリート壁 F",
+  "block.sf_deco.concrete_wall_g": "コンクリート壁 G",
+  "block.sf_deco.concrete_wall_h": "コンクリート壁 H",
+
+  "creativetab.sf_deco.base_blocks": "Haruneko's SF Deco -基礎ブロック-",
+  "creativetab.sf_deco.sf_blocks": "Haruneko's SF Deco -SFブロック-"
+}

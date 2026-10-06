@@ -1,0 +1,13 @@
+{
+  "loader": "fusion:model",
+  "type": "base",
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "sf_deco:block/concrete_wall_c"
+  },
+  "connections": [
+    {
+      "type": "is_same_block"
+    }
+  ]
+}

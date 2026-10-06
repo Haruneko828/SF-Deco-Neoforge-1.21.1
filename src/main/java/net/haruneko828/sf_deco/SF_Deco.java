@@ -1,5 +1,8 @@
 package net.haruneko828.sf_deco;
 
+import net.haruneko828.sf_deco.block.ModBlocks;
+import net.haruneko828.sf_deco.item.ModCreativeTabs;
+import net.haruneko828.sf_deco.item.ModItems;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -22,6 +25,11 @@ public class SF_Deco {
         modEventBus.addListener(this::commonSetup);
 
         NeoForge.EVENT_BUS.register(this);
+
+        ModCreativeTabs.register(modEventBus);
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::addCreative);
 
