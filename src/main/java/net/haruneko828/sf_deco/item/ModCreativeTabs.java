@@ -40,6 +40,22 @@ public class ModCreativeTabs {
                     .title(Component.translatable("creativetab.sf_deco.sf_blocks"))
                     .displayItems((parameters, output) -> {
 
+                        output.accept(ModBlocks.ELECTRIC_BOX_A);
+
+                    }).build());
+
+    public static final Supplier<CreativeModeTab> SF_PROPS_TAB = CREATIVE_MODE_TAB.register("sf_props_tab",
+            () -> CreativeModeTab.builder()
+                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(SF_Deco.MOD_ID, "sf_blocks_tab"))
+                    .icon(() -> new ItemStack(ModBlocks.ELECTRIC_BOX_A.get()))
+                    .title(Component.translatable("creativetab.sf_deco.sf_props"))
+                    .displayItems((parameters, output) -> {
+
+                        output.accept(ModBlocks.ELECTRIC_BOX_A);
+                        output.accept(ModBlocks.ELECTRIC_BOX_B);
+                        output.accept(ModBlocks.ELECTRIC_BOX_C);
+                        output.accept(ModBlocks.ELECTRIC_BOX_D);
+                        output.accept(ModBlocks.MODERN_LIGHT_A);
 
                     }).build());
 

@@ -10,6 +10,13 @@
   "block.sf_deco.concrete_wall_g": "Concrete Wall G",
   "block.sf_deco.concrete_wall_h": "Concrete Wall H",
 
+  "block.sf_deco.electric_box_a": "Electric Box A",
+  "block.sf_deco.electric_box_b": "Electric Box B",
+  "block.sf_deco.electric_box_c": "Electric Box C",
+  "block.sf_deco.electric_box_d": "Electric Box D",
+  "block.sf_deco.modern_light_a": "Modern Light A",
+
   "creativetab.sf_deco.base_blocks": "Haruneko's SF Deco -Base Blocks-",
-  "creativetab.sf_deco.sf_blocks": "Haruneko's SF Deco -SF Blocks-"
+  "creativetab.sf_deco.sf_blocks": "Haruneko's SF Deco -SF Blocks-",
+  "creativetab.sf_deco.sf_props": "Haruneko's SF Deco -SF Props-"
 }

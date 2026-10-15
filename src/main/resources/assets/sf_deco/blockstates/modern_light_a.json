@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "sf_deco:block/modern_light_a"
+    },
+    "facing=east": {
+      "model": "sf_deco:block/modern_light_a",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "sf_deco:block/modern_light_a",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "sf_deco:block/modern_light_a",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "sf_deco:block/modern_light_a",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "sf_deco:block/modern_light_a",
+      "x": 90
+    }
+  }
+}

@@ -1,5 +1,6 @@
 package net.haruneko828.sf_deco;
 
+import net.haruneko828.sf_deco.block.ModBlockTypes;
 import net.haruneko828.sf_deco.block.ModBlocks;
 import net.haruneko828.sf_deco.item.ModCreativeTabs;
 import net.haruneko828.sf_deco.item.ModItems;
@@ -30,6 +31,8 @@ public class SF_Deco {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModBlockTypes.register(modEventBus);
 
         modEventBus.addListener(this::addCreative);
 
