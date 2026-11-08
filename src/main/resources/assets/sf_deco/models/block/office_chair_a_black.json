@@ -1,0 +1,6 @@
+{
+  "parent": "sf_deco:block/office_chair_a",
+  "textures": {
+    "0": "sf_deco:block/office_chair_a_black"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "sf_deco:block/factory_metal_floor_a"
+  }
+}

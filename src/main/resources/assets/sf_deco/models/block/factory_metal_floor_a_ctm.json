@@ -1,0 +1,13 @@
+{
+  "loader": "fusion:model",
+  "type": "connecting",
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "sf_deco:block/factory_metal_floor_a_ctm"
+  },
+  "connections": [
+    {
+      "type": "is_same_block"
+    }
+  ]
+}

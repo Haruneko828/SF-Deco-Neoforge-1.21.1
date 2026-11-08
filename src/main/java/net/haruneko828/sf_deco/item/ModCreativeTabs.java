@@ -30,6 +30,15 @@ public class ModCreativeTabs {
                         output.accept(ModBlocks.CONCRETE_WALL_F);
                         output.accept(ModBlocks.CONCRETE_WALL_G);
                         output.accept(ModBlocks.CONCRETE_WALL_H);
+                        output.accept(ModBlocks.CONCRETE_WALL_I);
+                        output.accept(ModBlocks.CONCRETE_WALL_J);
+                        output.accept(ModBlocks.CONCRETE_FLOOR_A);
+                        output.accept(ModBlocks.CONCRETE_FLOOR_B);
+                        output.accept(ModBlocks.BASE_CONCRETE_A);
+                        output.accept(ModBlocks.EXPOSED_CONCRETE_A);
+                        output.accept(ModBlocks.EXPOSED_CONCRETE_B);
+                        output.accept(ModBlocks.EXPOSED_CONCRETE_C);
+                        output.accept(ModBlocks.EXPOSED_CONCRETE_D);
 
                     }).build());
 
@@ -40,7 +49,9 @@ public class ModCreativeTabs {
                     .title(Component.translatable("creativetab.sf_deco.sf_blocks"))
                     .displayItems((parameters, output) -> {
 
-                        output.accept(ModBlocks.ELECTRIC_BOX_A);
+                        output.accept(ModBlocks.FACTORY_METAL_FLOOR_A_CTM_A);
+                        output.accept(ModBlocks.FACTORY_METAL_FLOOR_A_CTM_B);
+                        output.accept(ModBlocks.FACTORY_METAL_FLOOR_A);
 
                     }).build());
 
@@ -55,7 +66,19 @@ public class ModCreativeTabs {
                         output.accept(ModBlocks.ELECTRIC_BOX_B);
                         output.accept(ModBlocks.ELECTRIC_BOX_C);
                         output.accept(ModBlocks.ELECTRIC_BOX_D);
+                        output.accept(ModBlocks.ELECTRIC_BOX_F);
+                        output.accept(ModBlocks.ELECTRIC_BOX_G);
+                        output.accept(ModBlocks.ELECTRIC_BOX_H);
+                        output.accept(ModBlocks.WALL_VENT);
                         output.accept(ModBlocks.MODERN_LIGHT_A);
+                        output.accept(ModBlocks.MODERN_LIGHT_B);
+                        output.accept(ModBlocks.WATER_COOLER);
+                        output.accept(ModBlocks.OFFICE_CHAIR_A_WHITE);
+                        output.accept(ModBlocks.OFFICE_CHAIR_A_BLACK);
+                        output.accept(ModBlocks.OFFICE_PLANT_A);
+                        output.accept(ModBlocks.OFFICE_PLANT_B);
+                        output.accept(ModBlocks.OFFICE_PLANT_C);
+                        output.accept(ModBlocks.OFFICE_PLANT_D);
 
                     }).build());
 

@@ -1,0 +1,62 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "sf_deco:block/wall_vent",
+      "y": 0
+    },
+    "facing=east": {
+      "model": "sf_deco:block/wall_vent",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "sf_deco:block/wall_vent",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "sf_deco:block/wall_vent",
+      "y": 270
+    },
+
+    "facing=up,horizontal_rotation=north": {
+      "model": "sf_deco:block/wall_vent",
+      "x": 270,
+      "y": 0
+    },
+    "facing=up,horizontal_rotation=east": {
+      "model": "sf_deco:block/wall_vent",
+      "x": 270,
+      "y": 90
+    },
+    "facing=up,horizontal_rotation=south": {
+      "model": "sf_deco:block/wall_vent",
+      "x": 270,
+      "y": 180
+    },
+    "facing=up,horizontal_rotation=west": {
+      "model": "sf_deco:block/wall_vent",
+      "x": 270,
+      "y": 270
+    },
+
+    "facing=down,horizontal_rotation=north": {
+      "model": "sf_deco:block/wall_vent",
+      "x": 90,
+      "y": 0
+    },
+    "facing=down,horizontal_rotation=east": {
+      "model": "sf_deco:block/wall_vent",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down,horizontal_rotation=south": {
+      "model": "sf_deco:block/wall_vent",
+      "x": 90,
+      "y": 180
+    },
+    "facing=down,horizontal_rotation=west": {
+      "model": "sf_deco:block/wall_vent",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

@@ -13,6 +13,7 @@ import java.util.Map;
 public class ModShape {
     private static final Map<ResourceLocation, HorizontalShapeSet> HORIZONTAL_SHAPES = new HashMap<>();
     private static final Map<ResourceLocation, DirectionalShapeSet> DIRECTIONAL_SHAPES = new HashMap<>();
+    private static final Map<ResourceLocation, SurfaceMountedShapeSet> SURFACE_MOUNTED_SHAPES = new HashMap<>();
 
     private ModShape() {
 
@@ -146,6 +147,46 @@ public class ModShape {
                 case UP -> up;
                 case DOWN -> down;
             };
+        }
+    }
+
+
+    private static void registerSurfaceMounted(ResourceLocation id, HorizontalShapeSet wall, HorizontalShapeSet up, HorizontalShapeSet down) {
+        if (SURFACE_MOUNTED_SHAPES.containsKey(id)) {
+            throw new IllegalArgumentException("Duplicate surface mounted shape id: " + id);
+        }
+        SURFACE_MOUNTED_SHAPES.put(id, new SurfaceMountedShapeSet(wall, up, down));
+    }
+
+    public static SurfaceMountedShapeSet getSurfaceMountedShape(ResourceLocation id) {
+        SurfaceMountedShapeSet shapes = SURFACE_MOUNTED_SHAPES.get(id);
+        if (shapes == null) {
+            throw new IllegalArgumentException("Unknown surface mounted shape id: " + id);
+        }
+        return shapes;
+    }
+
+    public static void registerSurfaceMounted(ResourceLocation id, VoxelShape north) {
+        HorizontalShapeSet wall = new HorizontalShapeSet(north, rotateNorthToEast(north), rotateNorthToSouth(north), rotateNorthToWest(north));
+
+        VoxelShape upNorth = rotateNorthToUp(north);
+
+        HorizontalShapeSet up = new HorizontalShapeSet(upNorth, rotateNorthToEast(upNorth), rotateNorthToSouth(upNorth), rotateNorthToWest(upNorth));
+
+        VoxelShape downNorth = rotateNorthToDown(north);
+
+        HorizontalShapeSet down = new HorizontalShapeSet(downNorth, rotateNorthToEast(downNorth), rotateNorthToSouth(downNorth), rotateNorthToWest(downNorth));
+
+        registerSurfaceMounted(id, wall, up, down);
+    }
+
+    public record SurfaceMountedShapeSet(HorizontalShapeSet wall, HorizontalShapeSet up, HorizontalShapeSet down) {
+        public VoxelShape get(Direction facing, Direction horizontalRotation) {
+            if (facing == Direction.UP) {return up.get(horizontalRotation);}
+
+            if (facing == Direction.DOWN) {return down.get(horizontalRotation);}
+
+            return wall.get(facing);
         }
     }
 }

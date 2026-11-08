@@ -1,0 +1,9 @@
+# Made in Blockbench 5.2.2
+
+newmtl m_cf72ec35-b9e1-cc37-1837-e30482ea4816
+map_Kd #texture0
+
+newmtl m_799eb0ea-cef0-ec04-77e4-55f2def3f3c0
+map_Kd #texture1
+
+newmtl none

@@ -29,6 +29,9 @@ public class ModBlockTypes {
                     -> new DirectionalPropBlock(properties, shapeId)
             )));
 
+    public static final DeferredHolder<MapCodec<? extends Block>,MapCodec<SurfaceMountedPropBlock>> SURFACE_MOUNTED_PROP = BLOCK_TYPE.register("surface_mounted_prop",
+            () -> SurfaceMountedPropBlock.CODEC);
+
     public static void register(IEventBus eventBus) {
         BLOCK_TYPE.register(eventBus);
     }
